@@ -1,0 +1,126 @@
+:root{
+    --cor-de-fundo:#EBECEE;
+    --branco: #FFFFFF;
+    --laranja: #000000;
+    --azul-degrade: linear-gradient(97,54deg, #002F52 35.49%, #326589 165.37%);
+    --font-principal:"Poppins";
+    }
+    body{
+    background-color:var(--cor-de-fundo);
+    font-family: var(--font-principal);
+    font-size: 1em;
+    font-weight: 200;
+    }
+    h1{
+    font-size: 100px;
+    text-align: center;
+    background-color: rgb(199, 93, 167);
+    }
+    .cabeçalho-menu-hamburguer{
+        width: 24px;
+        height: 24px;
+        background-image:url(./img/Menu.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+
+    }
+    .cabeçalho {
+        background-color: rgb(131, 49, 124);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+     .container {
+        display: flex;
+        align-items: center;
+     }
+     .container-imagem{
+        padding: 1em;
+        margin: 1em;
+        width: 2em;
+     }
+
+     .container-botão:checked ~ .lista-menu {
+        display: block;
+     }
+
+     .lista-menu {
+        display: inline-block;
+        position: absolute;
+        top: 100%;
+        width: 20vw;
+     }
+     
+     .lista-menu-titulo,
+     .lista-menu_item {
+      padding: 1em;
+      background-color: var(--branco);
+     }
+
+     .lista-menu-titulo {
+      color: var(--laranja);
+      font-weight: 700;}
+
+     .lista-menu-link {
+      background: var(--azul-degrade);
+      -webkit-background-clip: text;
+      background-clip: text;
+      text-transform: uppercase;
+     }
+
+     .container-botão {
+      display: none;
+     }
+
+     .lista-menu{
+      display: none;
+     }
+
+     .banner{
+      background-color: rgb(211, 133, 226);
+      color: rgb(5, 5, 5);
+      font-size: 20px;
+     }
+
+     .banner-titulo{
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+     }
+
+     .banner-texto{
+      font-weight: 500;
+      text-align: center;
+     }
+
+.banner-pesquisa {
+   background-color: transparent;
+   border: 1px solid var(--branco);
+   color: black;
+   border-radius: 24px;
+   padding: 1em;
+   width: 100%;
+   text-align: url("./img/lupa.svg") no-repeat ;
+   background-position: 1em;
+   text-align: center;
+}
+
+
+
+.carrossel_titulo {
+   background-color: var(--branco);
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 18px;
+   font-weight: 700;
+   padding: 1em 0 0.5em 0;
+}
+   
+   
+
+
+
+
+
